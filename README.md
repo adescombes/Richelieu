@@ -2,11 +2,11 @@
 ## Pipeline
 
 ### Intro
-1. **repertoires.xslx : ** table listing all repertories used to get data for addressing. 
-2. **iiif_image_downloader.ipynb : ** use this notebook with **repertoires.xslx** to download the images (in jpeg format) from Gallica and the iiif protocol. There might be an error due to the ticking box for license agreement, in which case the download must be done manually. 
+1. **repertoires.xslx :** table listing all repertories used to get data for addressing. 
+2. **iiif_image_downloader.ipynb :** use this notebook with **repertoires.xslx** to download the images (in jpeg format) from Gallica and the iiif protocol. There might be an error due to the ticking box for license agreement, in which case the download must be done manually. 
 
 ### Segmentation
-3. **segmentation/** : on the pages of the chosen repertories, text is displayed into 3 columns : we will use the tool [dhSegment](https://github.com/dhlab-epfl/dhSegment) to cut each page into 3 images of a single column. **SegmentationClassPNG** : 96 pages were manually labelled with [labelme](https://github.com/wkentaro/labelme), and this folder contains the resulting png. **JPEGImages** contains the original jpeg images.
+3. **segmentation/ :** on the pages of the chosen repertories, text is displayed into 3 columns : we will use the tool [dhSegment](https://github.com/dhlab-epfl/dhSegment) to cut each page into 3 images of a single column. **SegmentationClassPNG :** 96 pages were manually labelled with [labelme](https://github.com/wkentaro/labelme), and this folder contains the resulting png. **JPEGImages** contains the original jpeg images.
 4. Run **Predict page separation-iiif-images-py** : you will get the coordinates of "boxes" contouring each columns. They are stored in the folder **segmented_almanachs** into .npy format (one file per repertory).
 5. Run **predit_contours.py** : you will get each image of a column contoured by a greyish border (useful for OCR). They are stored in the folder **images_iiif_crops_results**.
 6. You can check that all images have been treated thanks to the notebook **Get missing precidtions.ipynb**. The missing images are added in the folder **missing_preds**. Repeat step 4 (this time predictions are stored in the file **missing.npy**) and step 5. 
