@@ -1,6 +1,6 @@
 ### Projet Richelieu
 
-This project, done in partnership with EPFL and INHA, has the *Richelieu district* as object of studies (more info [here](https://www.inha.fr/fr/recherche/programmation-scientifique/en-2018-2019/richelieu-histoire-du-quartier-etat-des-lieux.html) - in french). As part of this project, this repository shows on a map around 100'000 workers settled in the district between 1856 and 1922. This data comes from old directories, digitized and available online (see [Gallica](https://gallica.bnf.fr/)). The OCR is not the one provided by Gallica but has been done on Gallica's images with Google Cloud Vision API. 
+This project, done in partnership with EPFL and INHA, has the *Richelieu district* as object of studies (more info [here](https://www.inha.fr/fr/recherche/programmation-scientifique/en-2018-2019/richelieu-histoire-du-quartier-etat-des-lieux.html) - in french). As part of this project, this repository shows on a map around 100'000 workers settled in the district between 1856 and 1922 (see geographical limits of the district [here](https://drive.google.com/open?id=1T6nZfyEQkW5D0Iuoza5zo_cnC5bSgR4j&usp=sharing)). This data comes from old directories, digitized and available online (see [Gallica](https://gallica.bnf.fr/)). The OCR is not the one provided by Gallica but has been done on Gallica's images with Google Cloud Vision API. 
 
 Here are listed the steps to go from scanned directories to a clean table of people's addresses, and the size of data (or loss) when going through each step : 
 1. download images from Gallica with iiif protocol : 50 Go folder
@@ -14,4 +14,4 @@ Here are listed the steps to go from scanned directories to a clean table of peo
 
 To conclude, we have almost 76'000 unique workers in the Richelieu district between 1856 and 1922!
 
-<iframe src="https://drive.google.com/open?id=1T6nZfyEQkW5D0Iuoza5zo_cnC5bSgR4j&usp=sharing" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
