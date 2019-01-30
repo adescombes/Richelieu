@@ -6,7 +6,7 @@ var style_num_1850_0 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("duration");
+    var value = feature.get("q2wHide_duration");
     var labelText = "";
     size = 0;
     var labelFont = "16.9px \'.SF NS Text\', sans-serif";

@@ -32,8 +32,8 @@ jsonSource_num_1850_0.addFeatures(features_num_1850_0);var lyr_num_1850_0 = new 
 lyr_num_1850_0.setVisible(true);
 var layersList = [baseLayer,lyr_num_1850_0];
 lyr_num_1850_0.set('fieldAliases', {'Nom': 'Nom', 'Métier': 'Métier', 'Rue': 'Rue', 'Numéro': 'Numéro', 'Année': 'Année', 'decade': 'decade', 'X': 'X', 'Y': 'Y', 'start': 'start', 'end': 'end', 'exercice': 'exercice', 'duration': 'duration', });
-lyr_num_1850_0.set('fieldImages', {'Nom': 'TextEdit', 'Métier': 'TextEdit', 'Rue': 'TextEdit', 'Numéro': 'TextEdit', 'Année': 'TextEdit', 'decade': 'TextEdit', 'X': 'TextEdit', 'Y': 'TextEdit', 'start': 'TextEdit', 'end': 'TextEdit', 'exercice': 'TextEdit', 'duration': 'TextEdit', });
-lyr_num_1850_0.set('fieldLabels', {'Nom': 'inline label', 'Métier': 'header label', 'Rue': 'no label', 'Numéro': 'no label', 'Année': 'no label', 'decade': 'no label', 'X': 'no label', 'Y': 'no label', 'start': 'no label', 'end': 'no label', 'exercice': 'inline label', 'duration': 'no label', });
+lyr_num_1850_0.set('fieldImages', {'Nom': 'TextEdit', 'Métier': 'TextEdit', 'Rue': 'Hidden', 'Numéro': 'Hidden', 'Année': 'Hidden', 'decade': 'Hidden', 'X': 'Hidden', 'Y': 'Hidden', 'start': 'Hidden', 'end': 'Hidden', 'exercice': 'TextEdit', 'duration': 'Hidden', });
+lyr_num_1850_0.set('fieldLabels', {'Nom': 'inline label', 'Métier': 'header label', 'exercice': 'inline label', });
 lyr_num_1850_0.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
