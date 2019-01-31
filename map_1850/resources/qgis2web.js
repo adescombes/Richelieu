@@ -31,9 +31,12 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
+layerSwitcher.hidePanel = function() {};
+layerSwitcher.showPanel();
+
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_num_1850_0,
+      layer: lyr_duredexerciceannes_0,
       colName: 'Métier',
       zoom: 10,
       collapsed: true,
@@ -41,7 +44,7 @@ map.addControl(layerSwitcher);
     });
 
     map.addControl(searchLayer);
-map.getView().fit([258106.330316, 6250743.073517, 262450.502031, 6253730.809104], map.getSize());
+map.getView().fit([258832.050491, 6251441.730687, 261694.414052, 6253200.708703], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
