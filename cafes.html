@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_f6ca276256f144d7898180cd35c04bc9 {
+    <style>#map_1ecf1be828374ee7913a58b04728c1e2 {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -35,7 +35,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_f6ca276256f144d7898180cd35c04bc9" ></div>
+    <div class="folium-map" id="map_1ecf1be828374ee7913a58b04728c1e2" ></div>
 </body>
 <script>    
     
@@ -43,8 +43,8 @@
         var bounds = null;
     
 
-    var map_f6ca276256f144d7898180cd35c04bc9 = L.map(
-        'map_f6ca276256f144d7898180cd35c04bc9', {
+    var map_1ecf1be828374ee7913a58b04728c1e2 = L.map(
+        'map_1ecf1be828374ee7913a58b04728c1e2', {
         center: [48.866305, 2.338029],
         zoom: 15,
         maxBounds: bounds,
@@ -56,7 +56,7 @@
 
     
     
-    var tile_layer_bfdf2464a9e44b4688dcdf8044e8839f = L.tileLayer(
+    var tile_layer_19dbbb942f8140e28b72a25a0804d1c5 = L.tileLayer(
         'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -68,7 +68,7 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_f6ca276256f144d7898180cd35c04bc9);
+}).addTo(map_1ecf1be828374ee7913a58b04728c1e2);
     
             L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
                 _getDisplayDateFormat: function(date){
@@ -77,7 +77,7 @@
                     return newdate.format("YYYY");
                 }
             });
-            map_f6ca276256f144d7898180cd35c04bc9.timeDimension = L.timeDimension({period:"P1M"});
+            map_1ecf1be828374ee7913a58b04728c1e2.timeDimension = L.timeDimension({period:"P1Y"});
             var timeDimensionControl = new L.Control.TimeDimensionCustom({
   "autoPlay": true,
   "loopButton": true,
@@ -86,12 +86,12 @@
   "playerOptions": {
     "loop": false,
     "startOver": true,
-    "transitionTime": 200
+    "transitionTime": 500
   },
   "position": "bottomleft",
   "timeSliderDragUpdate": true
 });
-            map_f6ca276256f144d7898180cd35c04bc9.addControl(this.timeDimensionControl);
+            map_1ecf1be828374ee7913a58b04728c1e2.addControl(this.timeDimensionControl);
 
             console.log("");
 
@@ -126,10 +126,10 @@
                     }
                 })
 
-            var timestamped_geo_json_964b9cd7f14a4ec493d50b383652b7ae = L.timeDimension.layer.geoJson(geoJsonLayer,
+            var timestamped_geo_json_4b9b701ae3a148fa80fbd4bb2959b013 = L.timeDimension.layer.geoJson(geoJsonLayer,
                 {updateTimeDimension: true,
                  addlastPoint: true,
                  duration: "P3Y",
-                }).addTo(map_f6ca276256f144d7898180cd35c04bc9);
+                }).addTo(map_1ecf1be828374ee7913a58b04728c1e2);
         
 </script>
